@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto - Gaming Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Gaming Store</h1>
+    <p><i>El lugar para los real gamers.</i></p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html#productos">Productos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <section class="contacto">
+
+        <h2>Contacto</h2>
+
+        <p>
+            ¿Tienes alguna consulta sobre nuestros productos?
+            Envíanos un mensaje.
+        </p>
+
+        <form class="formulario-contacto">
+
+            <div class="campo">
+                <label for="nombre">Nombre</label>
+
+                <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Ingresa tu nombre"
+                        required>
+            </div>
+
+            <div class="campo">
+                <label for="email">Correo electrónico</label>
+
+                <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="ejemplo@email.com"
+                        required>
+            </div>
+
+            <div class="campo">
+                <label for="mensaje">Mensaje</label>
+
+                <textarea
+                        id="mensaje"
+                        name="mensaje"
+                        rows="5"
+                        placeholder="Escribe tu mensaje..."
+                        required></textarea>
+            </div>
+
+            <button type="submit">Enviar mensaje</button>
+
+        </form>
+
+    </section>
+
+</main>
+
+
+<footer id="footer">
+    <p>Email: contacto@mitienda.cl</p>
+        <p>Síguenos en <a href="https://www.instagram.com/">Instagram</a></p>
+</footer>
+
+</body>
+
+</html>
