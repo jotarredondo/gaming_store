@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html lang="es" xmlns="http://www.w3.org/1999/html">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Gaming Store</title>
+
+  <!-- Bootstrap 5 -->
+  <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+  <!-- Estilos propios -->
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -12,85 +20,225 @@
 
 <!-- CABECERA -->
 <header>
-  <h1>Gaming Store </h1>
-  <p><i>El lugar para los real gamers.</i></p>
-  <!-- <hr> -->
+    <h1>Gaming Store </h1>
+    <p><i>El lugar para los real gamers.</i></p>
+    <!-- <hr> -->
 </header>
 
-
 <!-- NAVEGACIÓN -->
-<nav>
-  <ul>
-    <li><a href="index.html">Inicio</a></li>
-    <li><a href="#productos">Productos</a></li>
-    <li><a href="contacto.html">Contacto</a></li>
-  </ul>
-</nav>
-<!--<hr> -->
+<nav class="navbar navbar-expand-md navbar-dark bg-success">
+    <div class="container">
 
+        <a class="navbar-brand" href="index.html">
+            Gaming Store
+        </a>
+
+        <!-- BURGER BTN -->
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarGaming"
+                aria-controls="navbarGaming"
+                aria-expanded="false"
+                aria-label="Abrir navegación">
+
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menú -->
+        <div class="collapse navbar-collapse" id="navbarGaming">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Inicio</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#productos">Productos</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
 <!-- CONTENIDO PRINCIPAL -->
 <main>
 
-  <section id="inicio">
-    <h2>Bienvenido a Gaming Store !</h2>
-    <p>La tienda N°1 en Videojuegos.</p>
-  </section>
+    <section id="inicio">
+        <h2>Bienvenido a Gaming Store !</h2>
+        <p>La tienda N°1 en Videojuegos.</p>
+    </section>
+
+    <!-- CARRUSEL DE PRODUCTOS -->
+    <div id="carouselGaming" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselGaming" data-bs-slide-to="0"
+                    class="active bg-success" aria-current="true" aria-label="PlayStation 5">
+            </button>
+
+            <button type="button" class="bg-success" data-bs-target="#carouselGaming" data-bs-slide-to="1"
+                    aria-label="Xbox One">
+            </button>
+
+            <button type="button" class="bg-success" data-bs-target="#carouselGaming" data-bs-slide-to="2"
+                    aria-label="Nintendo Switch 2">
+            </button>
+        </div>
+
+        <div class="carousel-inner">
+
+            <!-- SLIDE 1 -->
+            <div class="carousel-item active" data-bs-interval="3000">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <!-- TEXTO -->
+                        <div class="col-12 col-md-5 ps-md-5 pe-md-3 text-end">
+                            <h2 class="pt-5">PlayStation®5</h2>
+                            <p>Descubre una nueva generación de videojuegos.</p>
+                        </div>
+
+                        <!-- IMAGEN -->
+                        <div class="col-12 col-md-7 text-center">
+                            <img src="img/ps5.jpg" class="img-fluid p-5" alt="PlayStation 5">
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
-  <!-- PRODUCTOS DESTACADOS -->
-  <section id="productos">
-    <h2>Productos destacados</h2>
+            <!-- SLIDE 2 -->
+            <div class="carousel-item" data-bs-interval="3000">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <!-- TEXTO -->
+                        <div class="col-12 col-md-5 ps-md-5 pe-md-3 text-end">
+                            <h2 class="pt-5">Xbox One</h2>
+                            <p>Disfruta grandes juegos y franquicias de Xbox.</p>
+                        </div>
 
-    <ul class="lista-productos">
-
-      <li class="producto">
-        <h3>PlayStation®5</h3>
-
-        <img
-                src="img/ps5.jpg"
-                alt="PlayStation®5"
-                width="250">
-
-        <p><i>Explora las increíbles posibilidades de juego con las consolas PlayStation®5 y PS5® edición digital, que superan lo extraordinario .</i></p>
-      </li>
-
-
-      <li class="producto">
-        <h3>XBOX One </h3>
-
-        <img
-                src="img/xbox.jpg"
-                alt="Xbox One Series "
-                width="250">
-
-        <p><i>Juega a los grandes éxitos, a las franquicias más populares y a los clásicos de Xbox.</i></p>
-      </li>
+                        <!-- IMAGEN -->
+                        <div class="col-12 col-md-7 text-center">
+                            <img src="img/xbox.jpg" class="img-fluid p-5" alt="Xbox One">
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
-      <li class="producto">
-        <h3>Nintendo Switch™ 2 System</h3>
+            <!-- SLIDE 3 -->
+            <div class="carousel-item" data-bs-interval="3000">
 
-        <img
-                src="img/switch.jpg"
-                alt="Nintendo Switch 2"
-                width="250">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <!-- TEXTO -->
+                        <div class="col-12 col-md-5 ps-md-5 pe-md-3 text-end">
+                            <h2 class="pt-5">Nintendo Switch™ 2</h2>
+                            <p>Juega donde quieras y cuando quieras.</p>
+                        </div>
 
-        <p><i>Disfruta de los juegos como quieras y cuando quieras, con tres modos de juego para elegir.</i></p>
-      </li>
+                        <!-- IMAGEN -->
+                        <div class="col-12 col-md-7 text-center">
+                            <img src="img/switch.jpg" class="img-fluid p-5" alt="Nintendo Switch 2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    </ul>
+        <!-- BOTÓN ANTERIOR -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaming" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-success"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
 
-  </section>
+        <!-- BOTÓN SIGUIENTE -->
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselGaming" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-success"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+
+    <!-- PRODUCTOS DESTACADOS -->
+    <section id="productos" class="container my-5">
+
+        <h2 class="text-center mb-4">Productos destacados</h2>
+
+        <div class="row g-4">
+
+            <!-- PLAYSTATION 5 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="img/ps5.jpg" class="card-img-top" alt="PlayStation 5">
+
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title h5">PlayStation®5</h3>
+
+                        <p class="card-text">Explora las increíbles posibilidades de juego con las consolas
+                            PlayStation®5 y PS5® edición digital.</p>
+                        <a href="#" class="btn btn-success mt-auto">Ver producto</a>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- XBOX -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="img/xbox.jpg" class="card-img-top" alt="Xbox One">
+
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title h5">Xbox One</h3>
+
+                        <p class="card-text">Juega a los grandes éxitos, a las franquicias más populares
+                            y a los clásicos de Xbox.</p>
+
+                        <a href="#" class="btn btn-success mt-auto">Ver producto</a>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- NINTENDO SWITCH -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+
+                    <img src="img/switch.jpg" class="card-img-top" alt="Nintendo Switch 2">
+
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title h5">Nintendo Switch™ 2 System</h3>
+
+                        <p class="card-text">
+                            Disfruta de los juegos como quieras y cuando quieras,
+                            con tres modos de juego para elegir.</p>
+
+                        <a href="#" class="btn btn-success mt-auto">Ver producto</a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
 
 </main>
 
 <!-- PIE DE PÁGINA -->
 <footer id="footer">
-  <p>Email: contacto@gamingstore.cl</p>
-  <p>Síguenos en <a href="https://www.instagram.com/">Instagram</a></p>
+    <p>Email: contacto@gamingstore.cl</p>
+    <p>Síguenos en <a href="https://www.instagram.com/">Instagram</a></p>
 
 </footer>
+
+<!-- BOOTSTRAP JAVASCRIPT -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
