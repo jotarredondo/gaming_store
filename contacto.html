@@ -66,55 +66,30 @@
 <main>
 
     <section class="contacto">
-
         <h2>Contacto</h2>
 
-        <p>
-            ¿Tienes alguna consulta sobre nuestros productos?
-            Envíanos un mensaje.
-        </p>
+        <p>¿Tienes alguna consulta sobre nuestros productos?
+            Envíanos un mensaje.</p>
 
-        <form class="formulario-contacto">
-
+        <form id="formContacto" class="formulario-contacto">
             <div class="campo">
                 <label for="nombre">Nombre</label>
-
-                <input
-                        type="text"
-                        id="nombre"
-                        name="nombre"
-                        placeholder="Ingresa tu nombre"
-                        required>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
             </div>
 
             <div class="campo">
                 <label for="email">Correo electrónico</label>
-
-                <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="ejemplo@email.com"
-                        required>
+                <input type="email" id="email" name="email" placeholder="ejemplo@email.com" required>
             </div>
 
             <div class="campo">
                 <label for="mensaje">Mensaje</label>
-
-                <textarea
-                        id="mensaje"
-                        name="mensaje"
-                        rows="5"
-                        placeholder="Escribe tu mensaje..."
-                        required></textarea>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
             </div>
 
             <button type="submit">Enviar mensaje</button>
-
         </form>
-
     </section>
-
 </main>
 
 
@@ -123,6 +98,11 @@
         <p>Síguenos en <a href="https://www.instagram.com/">Instagram</a></p>
 </footer>
 
+<!-- BOOTSTRAP JAVASCRIPT -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JAVASCRIPT PROPIO -->
+<script src="script.js"></script>
 </body>
 
 </html>

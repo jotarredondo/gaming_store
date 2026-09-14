@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "nombre": "PlayStation®5",
+    "imagen": "img/ps5.jpg",
+    "descripcion": "Explora las increíbles posibilidades de juego con las consolas PlayStation®5 y PS5® edición digital.",
+    "precio": 549990
+  },
+  {
+    "id": 2,
+    "nombre": "Xbox One",
+    "imagen": "img/xbox.jpg",
+    "descripcion": "Juega a los grandes éxitos, a las franquicias más populares y a los clásicos de Xbox.",
+    "precio": 399990
+  },
+  {
+    "id": 3,
+    "nombre": "Nintendo Switch™ 2 System",
+    "imagen": "img/switch.jpg",
+    "descripcion": "Disfruta de los juegos como quieras y cuando quieras, con tres modos de juego para elegir.",
+    "precio": 469990
+  }
+]
